@@ -10,10 +10,18 @@ const api = axios.create({
   },
 });
 
-// eslint-disable-next-line no-unused-vars
+
 export async function getProducts(perPage=10){
   const response = await api.get(`api/auth/get_products?perPage=${perPage}`)
   return response.data  
 }
+
+
+export async function getSearchProduct(productName=""){
+  const response = await api.get(`api/auth/get_products?product_name=${productName}`)
+  return response.data
+}
+
+
 
 export default api;

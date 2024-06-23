@@ -1,15 +1,15 @@
 export const menuItem = [
     {
-        title:"Trang chủ",
-        href:""
+        title:"Home",
+        href:"/"
     },
     {
-        title:"Danh mục",
+        title:"Categories",
         href:"",
 
     },
     {
-        title:"Liên hệ",
+        title:"Contact",
         href:""
     }
 ]

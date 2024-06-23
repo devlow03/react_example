@@ -9,6 +9,6 @@ const ButtonLoadMore = ({ children, onClick, type = "button", className }) => {
       {children}
     </button>
   );
-}
+};
 
 export default ButtonLoadMore;
