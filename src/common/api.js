@@ -22,6 +22,11 @@ export async function getSearchProduct(productName=""){
   return response.data
 }
 
+export async function getBanner(){
+  const response = await api.get("api/auth/banners")
+  return response.data
+}
+
 
 
 export default api;

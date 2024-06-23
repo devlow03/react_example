@@ -4,12 +4,16 @@ export const menuItem = [
         href:"/"
     },
     {
-        title:"Categories",
+        title:"Contact",
         href:"",
 
     },
     {
-        title:"Contact",
+        title:"About",
+        href:""
+    },
+    {
+        title:'Signup',
         href:""
     }
 ]

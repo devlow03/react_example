@@ -19,16 +19,18 @@ const Item = () => {
   };
 
   if (isLoading && allProducts.length == 0) {
-    return <div className="flex flex-col items-center justify-center max-h-screen">
-    <MoonLoader
-color="#0000FF" // Màu sắc của MoonLoader
-loading={isLoading} // Bật/tắt MoonLoader
-size={50} // Kích thước của MoonLoader (px)
-aria-label="Loading Spinner"
-data-testid="loader"
-className="items-center"
-/>
-</div>
+    return (
+      <div className="flex flex-col items-center justify-center max-h-screen">
+        <MoonLoader
+          color="#0000FF" // Màu sắc của MoonLoader
+          loading={isLoading} // Bật/tắt MoonLoader
+          size={50} // Kích thước của MoonLoader (px)
+          aria-label="Loading Spinner"
+          data-testid="loader"
+          className="items-center"
+        />
+      </div>
+    );
   }
 
   if (error) {
@@ -38,10 +40,10 @@ className="items-center"
   console.log(products);
 
   return (
-    <div className="flex flex-col items-center bg-gray-100">
-      <div className="grid grid-cols-6 gap-6 p-10 justify-items-center ">
+    <div className="flex flex-col items-center ">
+      <div className="grid grid-cols-6 gap-6 mx-20 mt-10 justify-items-center ">
         {products.map((item, index) => (
-          <div key={index} className="rounded-md bg-white p-5">
+          <div key={index} className="rounded-md bg-white p-5 transform transition duration-300 hover:scale-110">
             <img
               src={item.thumpnail_url}
               alt={item.product_name}

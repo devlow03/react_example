@@ -23,7 +23,7 @@ const SearchBar = () => {
   // };
   return (
     <form
-      className="flex items-center bg-gray-100 rounded-md px-2 py-2 w-full max-w-sm"
+      className="flex items-center border border-gray-300 bg-white rounded-lg px-5 py-1  max-w-sm"
       onSubmit={handleSubmit}
       method="GET"
     >
@@ -33,11 +33,11 @@ const SearchBar = () => {
         type="search"
         name="search"
         id="search"
-        className="bg-gray-100 focus:outline-none w-full rounded-l-md py-2 px-2"
+        className="bg-white focus:outline-none  border-1 rounded-xl py-1 px-1 border-black"
         placeholder="Tìm kiếm"
       />
       <button type="submit">
-        <FaSearch className="text-gray-500 size-5" />
+        <FaSearch className="text-gray-500 size-4" />
       </button>
     </form>
   );
